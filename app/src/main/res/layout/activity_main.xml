@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="351dp"
+        android:layout_height="345dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input"
+        app:layout_constraintVertical_bias="0.808" />
+
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:background="#DAF5FB"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Введите вес в килограммах"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#008ACA"
+        android:textColorHint="#858585"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="284dp"
+        android:layout_height="92dp"
+        android:text="РАССЧИТАТЬ ТОПЛИВО"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
